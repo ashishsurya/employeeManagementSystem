@@ -46,5 +46,10 @@ public class Employee {
     public void setSalary(int salary) {
         this.salary = salary;
     }
+    public void getDetails() {
+        System.out.println("Name : " + this.name);
+        System.out.println("Id : " + this.id);
+        System.out.println("Age : " + this.age);
+    }
 
 }

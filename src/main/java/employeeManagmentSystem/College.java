@@ -27,13 +27,23 @@ public class College {
     public void setState(String state) {
         this.state = state;
     }
-
+    // add employee
     public void addEmployee(Employee e) {
         employees.add(e);
     }
+    //add teaching employee
+    public void addTeacher(Teaching t) {
+        employees.add(t);
+    }
 
+
+    // remove employee
     public void removeEmployee(Employee e) {
         employees.remove(e);
+    }
+    // remove teaching employee
+    public void removeTeacher(Teaching t) {
+        employees.remove(t);
     }
 
     public void printAllEmployeeDetails() {

@@ -7,9 +7,8 @@ public class Teaching extends Employee{
     private boolean isTeaching = true;
     private int noOfWorkingHours;
 
-    public Teaching(String name, String id, int age, int salary, Course course, int noOfWorkingHours) {
+    public Teaching(String name, String id, int age, int salary, int noOfWorkingHours) {
         super(name, id, age, salary);
-        this.course = course;
         this.isTeaching = true;
         this.noOfWorkingHours = noOfWorkingHours;
     }
@@ -35,5 +34,16 @@ public class Teaching extends Employee{
         this.noOfWorkingHours = noOfWorkingHours;
     }    
 
+    public void getDetails() {
+        super.getDetails();
+        System.out.println("Course He/She teaches : " + this.course.getCourseName());
+    }
 
+    public void getCourseDetailsOfTeacher() {
+        this.course.getCourseDetails();
+    }
+
+    public boolean isTeacher() {
+        return this.isTeaching;
+    }
 }

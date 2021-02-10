@@ -27,12 +27,23 @@ public class Course {
 
     public void setTaughtBy(Teaching taughtBy) {
         this.taughtBy = taughtBy;
+        taughtBy.setCourse(this);
     }
 
     Course(String courseName, String courseId, Teaching taughtBy) {
         this.courseName = courseName;
         this.courseId = courseId;
         this.taughtBy = taughtBy;
+        taughtBy.setCourse(this);
+    }
+
+    public void getCourseDetails() {
+        System.out.println("Course Name : " + this.courseName);
+        System.out.println("COurse Id : " + this.courseId);
+        System.out.println("Taught By : " + this.taughtBy.getName());
+    }
+    public void getLecturerDetails() {
+        this.taughtBy.getDetails();
     }
 
 }
