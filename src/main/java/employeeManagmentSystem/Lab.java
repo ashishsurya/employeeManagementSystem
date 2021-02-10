@@ -21,13 +21,24 @@ public class Lab {
         this.labId = labId;
     }
 
-    public TechnicalStaff getLabInstructo() {
-        return this.labInstructo;
+    public TechnicalStaff getLabInstructor() {
+        return this.labInstructor;
     }
 
-    public void setLabInstructo(TechnicalStaff labInstructo) {
-        this.labInstructo = labInstructo;
+    public void setLabInstructor(TechnicalStaff labInstructor) {
+        this.labInstructor = labInstructor;
+        labInstructor.setWorkingInLab(this);
     }
 
+    public Lab(String labName, String labId, TechnicalStaff labInstructor) {
+        this.labName = labName;
+        this.labId = labId;
+        this.labInstructor = labInstructor;
+        labInstructor.setWorkingInLab(this);
+    }
 
+    public void getLabDetails() {
+        System.out.println("Lab Name : " + this.labName);
+        System.out.println("Lab Id : " + this.labId);
+    }
 }

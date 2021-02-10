@@ -14,10 +14,9 @@ public class App {
         Employee e2 = new Employee("Dennis", "62779283566383", 27, 100000);
         Teaching t1 = new Teaching("Craig", "26399545449369", 32, 130000,  8);
         Course c_1 = new Course("Web Development","gtgenkvs3hjpp3", t1);
-        if (t1.isTeacher()) { 
-            System.out.println("Is a Teacher");
-        } else { 
-            System.out.println("Not a Teacher");
-        }
+        TechnicalStaff ts1 = new TechnicalStaff("Quincy", "isob34dkebback", 24, 100000, 9);
+        Lab l1 = new Lab("LAB1", "@52545%^#$^34", ts1);
+        l1.getLabDetails();
+        c.addLab(l1);
     }
 }
