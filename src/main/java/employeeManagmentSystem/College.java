@@ -49,7 +49,11 @@ public class College {
         employees.add(e);
     }
     //add teaching employee
-    public void addTeacher(Teaching t) {
+    public void addEmployee(Teaching t) {
+        employees.add(t);
+    }
+    //add non-teachin employee
+    public void addEmployee(TechnicalStaff t) {
         employees.add(t);
     }
 
@@ -59,7 +63,11 @@ public class College {
         employees.remove(e);
     }
     // remove teaching employee
-    public void removeTeacher(Teaching t) {
+    public void removeEmployee(Teaching t) {
+        employees.remove(t);
+    }
+    // removing non-teaching employee
+    public void removeEmployee(TechnicalStaff t) {
         employees.remove(t);
     }
 

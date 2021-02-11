@@ -29,9 +29,18 @@ public class TechnicalStaff extends Employee{
         this.isTeaching = isTeaching;
     }
 
-    public TechnicalStaff(String name, String id, int age, int salary, int noOfWorkingHours) {
+    public TechnicalStaff(String name, String id, int age, int salary, int noOfWorkingHours, College c) {
         super(name, id, age, salary);
         this.noOfWorkingHours = noOfWorkingHours;
+        c.addEmployee(this);
     }
-        
+    public void getDetails() {
+        super.getDetails();
+        System.out.println("Working in  : " + this.workingInLab.getLabName());
+        System.out.println("No of Working Hours : " + this.noOfWorkingHours);
+    }
+
+    public void getWorkingInLabDetails() {
+        this.workingInLab.getLabDetails();
+    }
 }

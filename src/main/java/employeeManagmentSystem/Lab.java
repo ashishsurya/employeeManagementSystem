@@ -41,4 +41,8 @@ public class Lab {
         System.out.println("Lab Name : " + this.labName);
         System.out.println("Lab Id : " + this.labId);
     }
+
+    public void getLabInstructorDetails() {
+        this.labInstructor.getDetails();
+    }
 }

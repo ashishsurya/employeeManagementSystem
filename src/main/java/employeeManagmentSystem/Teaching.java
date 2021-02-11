@@ -7,10 +7,11 @@ public class Teaching extends Employee{
     private boolean isTeaching = true;
     private int noOfWorkingHours;
 
-    public Teaching(String name, String id, int age, int salary, int noOfWorkingHours) {
+    public Teaching(String name, String id, int age, int salary, int noOfWorkingHours , College c) {
         super(name, id, age, salary);
         this.isTeaching = true;
         this.noOfWorkingHours = noOfWorkingHours;
+        c.addEmployee(this);
     }
 
     // getters and setters
