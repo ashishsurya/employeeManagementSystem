@@ -17,5 +17,7 @@ public class App {
         TechnicalStaff ts1 = new TechnicalStaff("Quincy", "isob34dkebback", 24, 100000, 9, c);
         Lab l1 = new Lab("LAB1", "@52545%^#$^34", ts1);
         c.printAllEmployeeDetails();
+        Mess m = new Mess();
+        m.getFoodItems();
     }
 }

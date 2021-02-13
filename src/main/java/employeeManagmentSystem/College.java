@@ -27,6 +27,7 @@ public class College {
     public College(String name, String state) {
         this.name = name;
         this.state = state;
+        
     }
 
     public String getName() {
